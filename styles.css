@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-image: linear-gradient(to bottom right, orange, white, green);
+
+}
+
+.maze-container {
+    background-image: linear-gradient(to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
+    margin-bottom: 20px;
+    overflow: auto;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.obstacle {
+    background-color: #f44336;
+}
+
+.path {
+    background-color: #4CAF50;
+}
+
+.current {
+    background-color: #FFEB3B;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
